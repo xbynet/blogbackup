@@ -1,8 +1,16 @@
 ---
 title: '''hello'''
 date: 2017-12-16 03:55:53
-tags:
+toc: true
+categories:
+- [test]
+tags: ginx
+thumbnail: https://sfault-avatar.b0.upaiyun.com/206/579/2065794108-5721d3ee75b36_huge256
+
 ---
+
+![](https://sfault-avatar.b0.upaiyun.com/206/579/2065794108-5721d3ee75b36_huge256)
+
 #  nginx+https配置 
 https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04
 TLS或传输层安全( transport layer security)，它的前身是SSL(安全套接字层secure sockets layer)，是Web协议用来包裹在一个受保护，加密封装正常通道。
