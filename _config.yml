@@ -7,13 +7,13 @@ title: 倚楼听风雨
 subtitle: 淡看江湖路
 description: 走路人
 author: xbynet
-language: zh-CN
+language: zh-Hans
 email: xbynet@outlook.com
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: http://xby1993.net/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -26,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -41,7 +41,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace:
 
 # Category & Tag
@@ -65,7 +65,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: icarus
+theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -82,22 +82,21 @@ feed:
     type: atom
     path: atom.xml
     limit: 100
-  
-jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
